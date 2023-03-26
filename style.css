@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: cursive;
   box-sizing: border-box;
 }
 
@@ -34,9 +34,14 @@ nav {
 }
 
 .logo {
-  width: 140px;
   cursor: pointer;
-  border-radius: 50%;
+  font-size: 26px;
+}
+
+.logo h1 span {
+  font-size: 78px;
+  color: #61b752;
+  font-family: cursive;
 }
 
 nav ul li {
@@ -46,10 +51,11 @@ nav ul li {
 }
 
 nav ul li a {
+  font-family: cursive;
   text-decoration: none;
   font-size: 25px;
   cursor: pointer;
-  color: teal;
+  color: #61b752;
   font-weight: 900;
   position: relative;
 }
@@ -58,7 +64,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: red;
+  background: rgb(250, 123, 123);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -70,21 +76,27 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 24%;
   font-size: 25px;
 }
 
 .header-text p {
+  font-family: cursive;
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
 }
 
+.header-text p span {
+  font-family: cursive;
+  color: #61b752;
+}
 .header-text h1 {
+  font-family: cursive;
   font-size: 50px;
   margin-top: 20px;
 }
 
 .header-text h1 span {
-  color: teal;
+  color: #61b752;
 }
 
 /* ```````````````````````````ABOUT````````````````````````````` */
@@ -92,8 +104,6 @@ nav ul li a:hover::after {
 #about {
   padding: 150px;
   color: #ababab;
-  /* backgrou; */
-  /* background:url(/images/bg.jpg); */
 }
 
 .row {
@@ -109,18 +119,17 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   float: right;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .about-col-2 {
-  flex-basis: 60%;
+  flex-basis: 55%;
 }
 
 .sub-title {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 600;
-  /* color: rgb(235, 138, 20); */
-  color: #8B008B;
+  color: #61b752;
 }
 
 .tab-titles {
@@ -130,11 +139,12 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-  margin-right: 50px;
-  font-style: 18px;
+  margin-top: 22px;
+  margin-right: 60px;
+  font-size: 23px;
   font-weight: bold;
   cursor: pointer;
-  /* color: #61b752; */
+  color: #5285b7;
   position: relative;
 }
 
@@ -156,13 +166,14 @@ nav ul li a:hover::after {
 .tab-contents ul li {
   list-style: none;
   margin: 10px 0;
+  font-size: 24px;
   /* color: red; */
 }
 
 .tab-contents ul li span {
-  color: teal;
-  font-weight: bold;
-  font-size: 28px;
+  color: red;
+  /* font-weight:; */
+  font-size: 29px;
   word-spacing: 4px;
 }
 
@@ -174,12 +185,15 @@ nav ul li a:hover::after {
   display: block;
 }
 
-#about p {
-  word-spacing: 9px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: "Roboto Slab", serif;
-  color: white;
+.para {
+  word-spacing: 4px;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  color: lightgray;
+}
+
+.para span {
+  color: red;
 }
 /* ````````````````````services```````````````````` */
 
@@ -201,19 +215,25 @@ nav ul li a:hover::after {
   font-style: 13px;
   font-weight: 500;
   border-radius: 10px;
-  /* transition: background 0.5s, transform 0.5s; */
   transition: background 0.5s, transform 0.5s;
 }
 
 .services-list i {
   font-size: 30px;
+  color: yellow;
   margin-bottom: 20px;
 }
 
 .services-list h1 {
   font-size: 30px;
   font-weight: 500;
+  color: #1d5287;
   margin-bottom: 15px;
+}
+
+.services-list p {
+  font-style: bold;
+  color: #1d5287;
 }
 
 .services-list a {
@@ -225,7 +245,9 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-  background: rgba(0, 128, 128, 0.87);
+  background: rgb(242, 137, 172);
+  color: #1d5287;
+  font-weight: 600;
   transform: translateY(-10px);
 }
 
@@ -271,7 +293,7 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 20px;
   text-align: center;
   font-size: 15px;
   transition: height 0.5s;
@@ -313,7 +335,7 @@ nav ul li a:hover::after {
   color: white;
   font-size: 15px;
   font-weight: 700;
-  transition: background 0.5s;
+  transition: background 0.1s;
 }
 
 .btn:hover {
@@ -335,7 +357,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: teal;
+  color: yellow;
   margin-right: 12px;
   font-size: 24px;
 }

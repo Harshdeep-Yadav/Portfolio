@@ -1,245 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Here I Am ;-)</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"  
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/89a6262ed4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- ``````````````````````````Header```````````````````````` -->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/me.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Web Developer</p>
-          <h1>
-            Hi, I'm <span> Harshdeep Yadav</span> <br />
-            From India
-          </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Here I Am ;-)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital,wght@0,400;1,500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/89a6262ed4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ``````````````````````````Header```````````````````````` -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1><span>P</span>ortfolio..</h1>
+        </div>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p><span>S</span>oftware Developer</p>
+        <h1>
+          <span>Hi</span>, I'm <span> Harshdeep Yadav</span> <br />
+          From India.
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- `````````````````````````ABOUT``````````````````````` -->
+
+  <div id="about">
+    <div class="contaier">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images\21085259.jpg" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me !!</h1>
+          <p class="para">
+            Greetings,
+            Harshdeep yadav this side form Bareilly Uttar Pradesh , Persuing Bechlor of
+            Engineering (B.E) from Chandigarh University Punjab in Computer Science with specialization in Business
+            System.
+            Currenty I'm Pre-final year student (6th semester) looking for Internship in
+            <span>Software-Development</span>
+            (MERN Stack).
+
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('achievement')">
+              Achievement
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Exprerience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br />C/C++ , Javascript , HTML , CSS , SQL , MySql</li>
+              <li><span>Technologies</span><br />React js , Node js , Express js , MongoDb <br>Git/GitHub</li>
+              <li><span>Stack</span><br />MERN Stack</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="achievement">
+            <ul>
+
+              <li>• Solved more than 650+ Problems at Leetcode.</li>
+              <li>• Secured Highest rating of 1579 at Leetcode.</li>
+              <li>• Secured Global Rank 95 at CodeChef Starter 80 Div 4.</li>
+              <li>• 32th rank on GeekforGeeks among all register college students.</li>
+              <li>• Five star at HackerRank in C++.</li>
+              <li>• Champion at Code Studio.</li>
+              <li>• Solved more than 950+ Problems across multiple Coding Platforms.</li>
+              <li>• Solved Problem for more than 345+ days continuously at Leetcode</li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.E -> Chandigarh University</span><br />-> from 2020 to 2024 <br> ->CGPA-8.10/10</li>
+              <li><span>Senior Secondary(XII) -> Brij Bhusan Lal Public School</span><br />->from 2018 to 2020 <br> ->
+                Percentage-82%</li>
+              <li><span>High School (X) -> Nalanda Public School</span><br />-> form 2016 to 2018 <br> -> Percentage-78%
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Campuss Ambassdor</span><br />Company-Tryst IIT Dehli </li>
+              <li><span>-></span><br /> ->Increasing the outreach of the fest by liking and sharing
+                the posts on various social media platforms <br>
+                -> Introducing your peers to Tryst <br>
+                -> Getting event registrations from their colleges</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
-    <!-- `````````````````````````ABOUT``````````````````````` -->
+  </div>
 
-    <div id="about">
-      <div class="contaier">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/me.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+  <!-- `````````````````````````Services``````````````````````` -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My-Services !!</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Web-Development</h1>
+          <p>I have developed multiple projects in web development using HTML,CSS,JS,React Js,Node Js,Epxress Js,MongoDb
+            etc. I have Exprerience how to use these .
+            <a href="#">Learn more</a>
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Software-Development</h1>
+          <p>
+            I have developed multiple Software using HTML,CSS,JS,React Js,Node Js,Epxress Js,MongoDb etc. I have
+            Exprerience how to manage these .
+            <a href="#">Learn more</a>
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Web-Design</h1>
+          <p>
+            Have basic knowledge of figma also. I know how to prepare a design of websites , apps atc on figma .
+            <a href="#">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ```````````````````````My Work````````````````` -->
+
+  <div id="portfolio">
+    <div class="comtainer">
+      <h1 class="sub-title">My-Work !!</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/work-1.jpg" alt="" />
+          <div class="layer">
+            <h3>Social-Media Website (Clone's) </h3>
+            <h3>MERN stack</h3>
             <p>
-              Greetings,
-              Harshdeep yadav this side form Bareilly Uttar Pradesh 243001, Persuing Bechlor of
-              Engineering (B.E) from Chandigarh University Punjab in Computer Science and Bussiness System 
-              currenty I am pre-final year student (5th semester) looking for Internship in WEB DEVELOPMENT 
-              (MERN Stack).
+              This is an attempt to build my own social media website using mern stack. Where user
+              can create there account,follow other user's and like and comment on other posts.
+            </p>
+            <a href="https://github.com/Harshdeep-Yadav/ig-clone"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-3.jpg" alt="" />
+          <div class="layer">
+            <h3>Blog Publishing Website</h3>
+            <h3>MERN stack</h3>
+            <p>
+              Build a blog post website in this user can login ,register himself create their post and edit the post
+              also adit his account.
+            </p>
+            <a href="https://github.com/Harshdeep-Yadav/blog-web"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i> </a>
+          </div>
+        </div>
 
+
+        <div class="work">
+          <img src="images\work4.jpg" alt="" />
+          <div class="layer">
+            <h3>CryptoCraze Website</h3>
+            <h3>Front-end</h3>
+            <p>
+              Build crypto-app in which user can track all about cryoto coins. Also can track news about coins all
+              around world.
+            </p>
+            <a href="https://github.com/Harshdeep-Yadav/Crypto"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <a href="https://cryptocraze.netlify.app/"><i class="fa-solid fa-eye"></i> </a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="./images/work-2.jpg" alt="" />
+          <div class="layer">
+            <h3>Ecommerce Website</h3>
+            <h3>MERN stack</h3>
+            <p>
+              E-commerce is an attempt to serve the people of India with unique designs on apparels. E-commerce is
+              revolutionising the way we all shop in India.
             </p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Exprerience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Programming Languages</span><br />C++,Javascript,HTML,CSS</li>
-                <li><span>Technologies</span><br />React js, Node js ,Express js ,MongoDB <br> SQL,MySql,Git/GitHub</li>
-            
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>Campuss Ambassdor</span><br />Company-Tryst IIT Dehli </li>
-                <li><span>-></span><br /> ->Increasing the outreach of the fest by liking and sharing
-                  the posts on various social media platforms <br>
-                 -> Introducing your peers to Tryst <br>
-                 -> Getting event registrations from their colleges</li>
-                <!-- <li><span>Software Developer</span><br />Building Software</li> -->
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>B.E ->Chandigarh University</span><br />-> from 2020 to 2024 <br> ->CGPA-8.10/10</li>
-                <li><span>Senior Secondary(XII) -> Brij Bhusan Lal Public School</span><br />->from 2018 to 2020 <br> -> Percentage-82%</li>
-                <li><span>High School (X) -> Nalanda Public School</span><br />-> form 2016 to 2018 <br> -> Percentage-78%</li>
-              </ul>
-            </div>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i> </a>
+            <a href="#"><i class="fa-solid fa-eye"></i> </a>
           </div>
         </div>
-      </div> 
+
+
+      </div>
+      <a href="https://github.com/Harshdeep-Yadav" target="_blank" class="btn">See More</a>
     </div>
+  </div>
 
-    <!-- `````````````````````````Services``````````````````````` -->
+  <!--````````````````````` Contact```````````````````````````` -->
 
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h1>Web Development</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              quibusdam harum culpa. Voluptates, nisi maxime accusantium
-              consequatur
-              <a href="#">Learn more</a>
-            </p>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <!-- left -->
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>harshdeep5708@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91-6396044681</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/harshdeep-yadav-777459219/"><i class="fa-brands fa-linkedin"
+                id="s2"></i></a>
+            <a href="https://github.com/Harshdeep-Yadav"><i class="fa-brands fa-github" id="s3"></i></a>
+            <a href="https://leetcode.com/harshdeepy5708/"><iconify-icon icon="simple-icons:leetcode"
+                id="s5"></iconify-icon>
+            </a>
+            <a href="https://auth.geeksforgeeks.org/user/harshdeep5708/practice"><span>gfg</span>
+            </a>
+            <a href="https://codeforces.com/profile/harshdeepy5708"> <span>CF</span></a>
+            <a href="https://www.codechef.com/users/harshdeep_5708"><span>CC</span></a>
+            <a href="https://www.hackerrank.com/dashboard"><i class="fa-brands fa-hackerrank" id="s4"></i></a>
+            <a href="https://www.instagram.com/20_harshdeep/"><i class="fa-brands fa-instagram" id="s1"></i></a>
           </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h1>Web Design</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              quibusdam harum culpa. Voluptates, nisi maxime accusantium
-              consequatur
-              <a href="#">Learn more</a>
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h1>App Design</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              quibusdam harum culpa. Voluptates, nisi maxime accusantium
-              consequatur
-              <a href="#">Learn more</a>
-            </p>
-          </div>
+          <a href="images\Harshdeep_Yadav (6).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <!-- right -->
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
 
-    <!-- ```````````````````````My Work````````````````` -->
-
-    <div id="portfolio">
-      <div class="comtainer">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="./images/work-1.jpg" alt="" />
-            <div class="layer">
-              <h3>Social Media Website</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                sint eveniet officia in quod nam alias totam, reprehenderit
-                optio temporibus placeat nesciunt, amet saepe dolorem. Corporis
-                distinctio magni ipsam ab!
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./images/work-2.jpg" alt="" />
-            <div class="layer">
-              <h3>Ecommerce Website</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                sint eveniet officia in quod nam alias totam, reprehenderit
-                optio temporibus placeat nesciunt, amet saepe dolorem. Corporis
-                distinctio magni ipsam ab!
-              </p>
-
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="./images/work-3.jpg" alt="" />
-            <div class="layer">
-              <h3>Blog Publishing Website</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                sint eveniet officia in quod nam alias totam, reprehenderit
-                optio temporibus placeat nesciunt, amet saepe dolorem. Corporis
-                distinctio magni ipsam ab!
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-          </div>
-        </div>
-        <a href="https://github.com/Harshdeep-Yadav" target="_blank" class="btn">See More</a>
-      </div>
+    <div class="copyright">
+      <p>Copyright &#169 Harshdeep Yadav
+      </p>
     </div>
+  </div>
 
-    <!--````````````````````` Contact```````````````````````````` -->
+  <script src="app.js"></script>
+</body>
 
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <!-- left -->
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>harshdeep5708@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91-6396044681</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/harshdeep-yadav-777459219/"><i class="fa-brands fa-linkedin" id="s2"></i></a>
-              <a href="https://github.com/Harshdeep-Yadav"><i class="fa-brands fa-github" id="s3"></i></a>
-              <a href="https://leetcode.com/harshdeepy5708/"><iconify-icon icon="simple-icons:leetcode" id="s5"></iconify-icon>
-              </a>
-              <!-- <a href=""><i class="fa fa-cloud"></i> -->
-              </a>
-              <a href="https://www.hackerrank.com/dashboard"><i class="fa-brands fa-hackerrank" id="s4"></i></a>
-              <a href="https://www.instagram.com/20_harshdeep/"><i class="fa-brands fa-instagram" id="s1"></i></a>
-            </div>
-            <a href="images/Harshdeep's Resume.pdf" download class="btn btn2"
-              >Download CV</a
-            >
-          </div>
-          <!-- right -->
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="text"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright &#169 Harshdeep Yadav
-        </p>
-      </div>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
 </html>
